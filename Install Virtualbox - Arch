@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo pacman -S virtualbox virtualbox-host-modules-arch qt5-x11extras
+sudo modprobe vboxdrv
+yay -S virtualbox-ext-oracle
+sudo gpasswd -a $('whoami') vboxusers
